@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_activity"
+    tools:context=".pressentation.MainActivity">
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/livesTextView"
+        app:layout_constraintStart_toStartOf="@id/livesTextView"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/livesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lives:"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/lives"
+        android:text="text"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/livesTextView"
+        app:layout_constraintBottom_toBottomOf="@id/livesTextView"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:text="text"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/scoreTextView"
+        app:layout_constraintBottom_toBottomOf="@id/scoreTextView"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/exmple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exmple"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/scoreTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take the answer"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer:"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/exmple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
